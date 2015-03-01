@@ -7,11 +7,17 @@ using System.Threading.Tasks;
 
 namespace TSPP
 {
+    /// <summary>
+    /// The class for generic Item representation
+    /// </summary>
     public class Item
     {
+        /// <summary>position of the item</summary>
         private Point varPosition;
-        public bool IsHelpful;
-        public Point Position
+        /// <summary>is the item helpful</summary>
+        public bool isHelpful;
+        /// <summary>position of the item (property)</summary>
+        public Point position
         {
             get
             {
@@ -23,14 +29,27 @@ namespace TSPP
             }
         }
 
+        /// <summary>
+        /// default constructor
+        /// </summary>
         public Item()
         { }
 
+        /// <summary>
+        /// constructor with a parameter
+        /// </summary>
+        /// <param name="Pos">initial position of the item</param>
         public Item(Point Pos)
         {
         }
 
-        public virtual void DrawItem(Pen MyPen, Graphics gPanel, int SizeofCell)
+        /// <summary>
+        /// draw the item using pen and on the panel
+        /// </summary>
+        /// <param name="gPanel">a panel to draw on</param>
+        /// <param name="myPen">a tool that sets the drawing behavior</param>
+        /// <param name="sizeOfCell">current size of the net's cell</param>
+        public virtual void DrawItem(Pen myPen, Graphics gPanel, int sizeOfCell)
         {
         }
     }

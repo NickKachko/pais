@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TSPP</name>
+    </assembly>
+    <members>
+        <member name="T:TSPP.AboutBox1">
+            <summary>
+            The class for the about form
+            </summary>
+        </member>
+        <member name="M:TSPP.AboutBox1.#ctor">
+            <summary>
+            main constructor
+            </summary>
+        </member>
+        <member name="M:TSPP.AboutBox1.okButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="F:TSPP.AboutBox1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TSPP.AboutBox1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:TSPP.AboutBox1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:TSPP.AboutBox1.AssemblyTitle">
+            <summary>
+            what is the assembly name
+            </summary>
+        </member>
+        <member name="P:TSPP.AboutBox1.AssemblyVersion">
+            <summary>
+            what is the assembly version
+            </summary>
+        </member>
+        <member name="P:TSPP.AboutBox1.AssemblyDescription">
+            <summary>
+            what is the description
+            </summary>
+        </member>
+        <member name="P:TSPP.AboutBox1.AssemblyProduct">
+            <summary>
+            what is the product
+            </summary>
+        </member>
+        <member name="P:TSPP.AboutBox1.AssemblyCopyright">
+            <summary>
+            what are the copyrights
+            </summary>
+        </member>
+        <member name="P:TSPP.AboutBox1.AssemblyCompany">
+            <summary>
+            what is the project company
+            </summary>
+        </member>
+        <member name="T:TSPP.BlueItem">
+            <summary>
+            The class for useful Item representation
+            </summary>
+        </member>
+        <member name="T:TSPP.Item">
+            <summary>
+            The class for generic Item representation
+            </summary>
+        </member>
+        <member name="F:TSPP.Item.varPosition">
+            <summary>position of the item</summary>
+        </member>
+        <member name="F:TSPP.Item.isHelpful">
+            <summary>is the item helpful</summary>
+        </member>
+        <member name="M:TSPP.Item.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:TSPP.Item.#ctor(System.Drawing.Point)">
+            <summary>
+            constructor with a parameter
+            </summary>
+            <param name="Pos">initial position of the item</param>
+        </member>
+        <member name="M:TSPP.Item.DrawItem(System.Drawing.Pen,System.Drawing.Graphics,System.Int32)">
+            <summary>
+            draw the item using pen and on the panel
+            </summary>
+            <param name="gPanel">a panel to draw on</param>
+            <param name="myPen">a tool that sets the drawing behavior</param>
+            <param name="sizeOfCell">current size of the net's cell</param>
+        </member>
+        <member name="P:TSPP.Item.position">
+            <summary>position of the item (property)</summary>
+        </member>
+        <member name="M:TSPP.BlueItem.#ctor(System.Drawing.Point)">
+            <summary>
+            constructor taking initial position
+            </summary>
+            <param name="pos">the position to start on</param>
+        </member>
+        <member name="M:TSPP.BlueItem.DrawItem(System.Drawing.Pen,System.Drawing.Graphics,System.Int32)">
+            <summary>
+            draw the item using pen and on the panel
+            </summary>
+            <param name="gPanel">a panel to draw on</param>
+            <param name="myPen">a tool that sets the drawing behavior</param>
+            <param name="sizeOfCell">current size of the net's cell</param>
+        </member>
+        <member name="T:TSPP.Form1">
+            <summary>
+            The class for the main GUI form
+            </summary>
+        </member>
+        <member name="F:TSPP.Form1.gPanel">
+            <summary>a panel to draw on</summary>
+        </member>
+        <member name="F:TSPP.Form1.myPen">
+            <summary>a tool that sets the drawing behavior</summary>
+        </member>
+        <member name="F:TSPP.Form1.myNet">
+            <summary>a gaming area</summary>
+        </member>
+        <member name="F:TSPP.Form1.mySnake">
+            <summary>an instance of a snake</summary>
+        </member>
+        <member name="F:TSPP.Form1.myRand">
+            <summary>an entity to generate random numbers</summary>
+        </member>
+        <member name="F:TSPP.Form1.myItem">
+            <summary>an useful item</summary>
+        </member>
+        <member name="F:TSPP.Form1.myBadItem">
+            <summary>a harmful item</summary>
+        </member>
+        <member name="F:TSPP.Form1.timerInterval">
+            <summary>time interval to move the snake within</summary>
+        </member>
+        <member name="F:TSPP.Form1.isJustAdded">
+            <summary>is an item was just added</summary>
+        </member>
+        <member name="F:TSPP.Form1.mouseClicked">
+            <summary>to determine whether the mouse was pressed</summary>
+        </member>
+        <member name="M:TSPP.Form1.#ctor">
+            <summary>
+            default constructor for the form
+            </summary>
+        </member>
+        <member name="M:TSPP.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            what to do when a form is loading
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="M:TSPP.Form1.Form1_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            to track specific key presses
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="M:TSPP.Form1.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            occurs every tick of the timer
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="M:TSPP.Form1.DrawAll">
+            <summary>
+            draw all items on the form
+            </summary>
+        </member>
+        <member name="M:TSPP.Form1.exitToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            what to do if an exit tool was clicked
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="M:TSPP.Form1.trackBar1_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            when a track bar value is changed
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="M:TSPP.Form1.trackBar1_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            delegate keypresses on the track bar to the form
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="M:TSPP.Form1.trackBar1_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            to set up a bool flag
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="M:TSPP.Form1.trackBar1_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            to set off a bool flag
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="M:TSPP.Form1.helpToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            what to do if a help tool was clicked
+            </summary>
+            <param name="sender">object that caused event</param>
+            <param name="e">event parameters</param>
+        </member>
+        <member name="F:TSPP.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TSPP.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TSPP.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TSPP.Net">
+            <summary>
+            The class for the net attributes and functions
+            </summary>
+        </member>
+        <member name="M:TSPP.Net.#ctor(System.Drawing.Point)">
+            <summary>
+            create an instance using the resolution information
+            </summary>
+            <param name="res">resolution</param>
+        </member>
+        <member name="M:TSPP.Net.#ctor(System.Int32)">
+            <summary>
+            create an instance using the size of the cell data
+            </summary>
+            <param name="soc"></param>
+        </member>
+        <member name="M:TSPP.Net.DrawNet(TSPP.Net,System.Windows.Forms.PictureBox,System.Drawing.Pen,System.Drawing.Graphics)">
+            <summary>
+            draw the current net within specific picturebox using pen and on the panel
+            </summary>
+            <param name="myNet">current instance of the net</param>
+            <param name="pictureBox1">picturebox where is a panel is placed</param>
+            <param name="myPen">a tool that sets the drawing behavior</param>
+            <param name="gPanel">a panel to draw on</param>
+        </member>
+        <member name="P:TSPP.Net.sizeOfCell">
+            <summary>size of the item cell in pixels</summary>
+        </member>
+        <member name="P:TSPP.Net.colorOfNet">
+            <summary>color of the net</summary>
+        </member>
+        <member name="P:TSPP.Net.resolution">
+            <summary>resolution of the net in (itemsX, itemsY)</summary>
+        </member>
+        <member name="M:TSPP.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:TSPP.RedItem">
+            <summary>
+            The class for a harmful Item representation
+            </summary>
+        </member>
+        <member name="F:TSPP.RedItem.secondCounter">
+            <summary>to count milliseconds passed from the last timestamp</summary>
+        </member>
+        <member name="F:TSPP.RedItem.maxSecond">
+            <summary>milliseconds between timestamps</summary>
+        </member>
+        <member name="M:TSPP.RedItem.#ctor(System.Drawing.Point)">
+            <summary>
+            constructor taking initial position
+            </summary>
+            <param name="pos">the position to start on</param>
+        </member>
+        <member name="M:TSPP.RedItem.DrawItem(System.Drawing.Pen,System.Drawing.Graphics,System.Int32)">
+            <summary>
+            draw the item using pen and on the panel
+            </summary>
+            <param name="gPanel">a panel to draw on</param>
+            <param name="myPen">a tool that sets the drawing behavior</param>
+            <param name="sizeOfCell">current size of the net's cell</param>
+        </member>
+        <member name="T:TSPP.Snake">
+            <summary>
+            The class for snake representation
+            </summary>
+        </member>
+        <member name="F:TSPP.Snake._singleton">
+            <summary>an instance of the snake</summary>
+        </member>
+        <member name="M:TSPP.Snake.#ctor">
+            <summary>
+            a private default constructor to prevent outside instantiation
+            </summary>
+        </member>
+        <member name="M:TSPP.Snake.GetSingleton">
+            <summary>
+            use this instead constructor in order to get a snake's object
+            </summary>
+            <returns>an instance of the snake</returns>
+        </member>
+        <member name="M:TSPP.Snake.DrawSnake(System.Drawing.Graphics,System.Drawing.Pen,System.Int32)">
+            <summary>
+            draw the snake using pen and on the panel
+            </summary>
+            <param name="gPanel">a panel to draw on</param>
+            <param name="myPen">a tool that sets the drawing behavior</param>
+            <param name="sizeOfCell">current size of the net's cell</param>
+        </member>
+        <member name="M:TSPP.Snake.Move(System.Drawing.Point)">
+            <summary>
+            move whithin the net
+            </summary>
+            <param name="netRes">resolution of the net</param>
+        </member>
+        <member name="M:TSPP.Snake.Add">
+            <summary>
+            add one item to the snake's size
+            </summary>
+        </member>
+        <member name="P:TSPP.Snake.position">
+            <summary>a set of positions of the snake</summary>
+        </member>
+        <member name="P:TSPP.Snake.Direction">
+            <summary>a direction the snake heading</summary>
+        </member>
+        <member name="T:TSPP.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:TSPP.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:TSPP.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

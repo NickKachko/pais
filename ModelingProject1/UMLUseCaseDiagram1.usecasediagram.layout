@@ -39,7 +39,7 @@
       <relativeChildShapes />
     </useCaseShape>
     <useCaseShape Id="e79b1eee-b628-4e5c-bd6a-a6229b14160d" absoluteBounds="3.625, 3.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="8ab58a20-95c0-4cd9-a5c5-79b6ada39b7f" LastKnownName="Correcting Out Position" />
+      <useCaseMoniker Id="8ab58a20-95c0-4cd9-a5c5-79b6ada39b7f" LastKnownName="Correcting Out position" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseGeneralizationConnector edgePoints="[(4.125 : 3.5); (4.125 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">

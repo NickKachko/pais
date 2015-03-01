@@ -228,7 +228,7 @@
       <class Id="2d640d43-2cd3-4a6e-b4d4-a46cb9ef718f" name="Item" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a78897cd-fee1-4a67-8580-69210acb7eaf" />
         <ownedAttributesInternal>
-          <property Id="99ba6aa9-8a13-4cc3-9320-797dc718e67c" name="Position" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="99ba6aa9-8a13-4cc3-9320-797dc718e67c" name="position" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="178ada1f-a43c-4552-b405-acf4ca9266fe" />
             <type_NamedElement>
               <referencedTypeMoniker Id="c15baa0d-f94f-4224-a6a7-e5d62bf87682" LastKnownName="Point" />
@@ -285,7 +285,7 @@
               <referencedTypeMoniker Id="4be1ddac-c6a1-4fd6-b72b-b441b39dd70b" LastKnownName="NarrowDirection" />
             </type_NamedElement>
           </property>
-          <property Id="e243456a-42e9-4a4d-b15d-d6f4b8395767" name="Position" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="e243456a-42e9-4a4d-b15d-d6f4b8395767" name="position" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ac318084-9875-4c3e-9071-c3bfacaea586" />
             <type_NamedElement>
               <referencedTypeMoniker Id="c15baa0d-f94f-4224-a6a7-e5d62bf87682" LastKnownName="Point" />

@@ -7,17 +7,30 @@ using System.Threading.Tasks;
 
 namespace TSPP
 {
+    /// <summary>
+    /// The class for useful Item representation
+    /// </summary>
     public class BlueItem : Item
     {
-        public BlueItem(Point Pos)
+        /// <summary>
+        /// constructor taking initial position
+        /// </summary>
+        /// <param name="pos">the position to start on</param>
+        public BlueItem(Point pos)
         {
-            Position = Pos;
-            IsHelpful = true;
+            position = pos;
+            isHelpful = true;
         }
 
-        public override void DrawItem(Pen MyPen, Graphics gPanel, int SizeofCell)
+        /// <summary>
+        /// draw the item using pen and on the panel
+        /// </summary>
+        /// <param name="gPanel">a panel to draw on</param>
+        /// <param name="myPen">a tool that sets the drawing behavior</param>
+        /// <param name="sizeOfCell">current size of the net's cell</param>
+        public override void DrawItem(Pen myPen, Graphics gPanel, int sizeOfCell)
         {
-            gPanel.FillRectangle(MyPen.Brush, Position.X * SizeofCell, Position.Y * SizeofCell, SizeofCell, SizeofCell);
+            gPanel.FillRectangle(myPen.Brush, position.X * sizeOfCell, position.Y * sizeOfCell, sizeOfCell, sizeOfCell);
         }
     }
 }

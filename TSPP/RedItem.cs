@@ -7,21 +7,37 @@ using System.Threading.Tasks;
 
 namespace TSPP
 {
+    /// <summary>
+    /// The class for a harmful Item representation
+    /// </summary>
     public class RedItem : Item
     {
-        public int SecondCounter, MaxSecond;
+        /// <summary>to count milliseconds passed from the last timestamp</summary>
+        public int secondCounter;
+        /// <summary>milliseconds between timestamps</summary>
+        public int maxSecond;
 
-        public RedItem(Point Pos)
+        /// <summary>
+        /// constructor taking initial position
+        /// </summary>
+        /// <param name="pos">the position to start on</param>
+        public RedItem(Point pos)
         {
-            Position = Pos;
-            SecondCounter = 0;
-            MaxSecond = 10;
-            IsHelpful = false;
+            position = pos;
+            secondCounter = 0;
+            maxSecond = 10;
+            isHelpful = false;
         }
 
-        public override void DrawItem(Pen MyPen, Graphics gPanel, int SizeofCell)
+        /// <summary>
+        /// draw the item using pen and on the panel
+        /// </summary>
+        /// <param name="gPanel">a panel to draw on</param>
+        /// <param name="myPen">a tool that sets the drawing behavior</param>
+        /// <param name="sizeOfCell">current size of the net's cell</param>
+        public override void DrawItem(Pen myPen, Graphics gPanel, int sizeOfCell)
         {
-            gPanel.FillRectangle(MyPen.Brush, Position.X * SizeofCell, Position.Y * SizeofCell, SizeofCell, SizeofCell);
+            gPanel.FillRectangle(myPen.Brush, position.X * sizeOfCell, position.Y * sizeOfCell, sizeOfCell, sizeOfCell);
         }
     }
 }

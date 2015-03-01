@@ -22,7 +22,7 @@
         <elementDefinition Id="65a83373-5094-451d-b0a0-f3df170d28b6" />
         <generalsInternal>
           <generalization Id="56a4ea82-3ffb-4829-a455-c7e70b1f3e7e" isSubstitutable="false">
-            <useCaseMoniker Id="8ab58a20-95c0-4cd9-a5c5-79b6ada39b7f" LastKnownName="Correcting Out Position" />
+            <useCaseMoniker Id="8ab58a20-95c0-4cd9-a5c5-79b6ada39b7f" LastKnownName="Correcting Out position" />
             <elementDefinition Id="823dbd7a-746b-49e0-9d10-595e1d8eacc6" />
           </generalization>
         </generalsInternal>
@@ -55,7 +55,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="8ab58a20-95c0-4cd9-a5c5-79b6ada39b7f" name="Correcting Out Position" isAbstract="false" isLeaf="false">
+      <useCase Id="8ab58a20-95c0-4cd9-a5c5-79b6ada39b7f" name="Correcting Out position" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1085b4a2-3adb-4beb-9263-2f0f8760548c" />
         <generalsInternal>
           <generalization Id="69e536ad-d413-40fe-b8b3-8b1fdf82404d" isSubstitutable="false">

@@ -9,8 +9,14 @@ using System.Windows.Forms;
 
 namespace TSPP
 {
+    /// <summary>
+    /// The class for the about form
+    /// </summary>
     partial class AboutBox1 : Form
     {
+        /// <summary>
+        /// main constructor
+        /// </summary>
         public AboutBox1()
         {
             InitializeComponent();
@@ -18,6 +24,9 @@ namespace TSPP
 
         #region Assembly Attribute Accessors
 
+        /// <summary>
+        /// what is the assembly name
+        /// </summary>
         public string AssemblyTitle
         {
             get
@@ -35,6 +44,9 @@ namespace TSPP
             }
         }
 
+        /// <summary>
+        /// what is the assembly version
+        /// </summary>
         public string AssemblyVersion
         {
             get
@@ -43,6 +55,9 @@ namespace TSPP
             }
         }
 
+        /// <summary>
+        /// what is the description
+        /// </summary>
         public string AssemblyDescription
         {
             get
@@ -56,6 +71,9 @@ namespace TSPP
             }
         }
 
+        /// <summary>
+        /// what is the product
+        /// </summary>
         public string AssemblyProduct
         {
             get
@@ -69,6 +87,9 @@ namespace TSPP
             }
         }
 
+        /// <summary>
+        /// what are the copyrights
+        /// </summary>
         public string AssemblyCopyright
         {
             get
@@ -82,6 +103,9 @@ namespace TSPP
             }
         }
 
+        /// <summary>
+        /// what is the project company
+        /// </summary>
         public string AssemblyCompany
         {
             get
@@ -96,6 +120,11 @@ namespace TSPP
         }
         #endregion
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender">object that caused event</param>
+        /// <param name="e">event parameters</param>
         private void okButton_Click(object sender, EventArgs e)
         {
             this.Close();
