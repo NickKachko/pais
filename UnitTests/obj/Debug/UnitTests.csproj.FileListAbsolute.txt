@@ -1,0 +1,7 @@
+D:\KPI\Visual Studio 2010\Projects\TSPP\UnitTests\bin\Debug\UnitTests.dll
+D:\KPI\Visual Studio 2010\Projects\TSPP\UnitTests\bin\Debug\UnitTests.pdb
+D:\KPI\Visual Studio 2010\Projects\TSPP\UnitTests\bin\Debug\TSPP.exe
+D:\KPI\Visual Studio 2010\Projects\TSPP\UnitTests\bin\Debug\TSPP.pdb
+D:\KPI\Visual Studio 2010\Projects\TSPP\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\KPI\Visual Studio 2010\Projects\TSPP\UnitTests\obj\Debug\UnitTests.dll
+D:\KPI\Visual Studio 2010\Projects\TSPP\UnitTests\obj\Debug\UnitTests.pdb

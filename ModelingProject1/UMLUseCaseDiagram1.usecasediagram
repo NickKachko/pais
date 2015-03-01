@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9dd11aa1-a47d-4205-9027-8558e10dffd3" name="UMLUseCaseDiagram1" linkedPackageId="eaaa921d-e28c-44c2-9a99-e12b3fe4bba3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="57714b25-aace-4205-a169-d833c1e1d35c" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="63e60df0-c3d3-4f27-8ad3-cf2c5c57c21f" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="806ecf2b-da11-4c94-b0f4-045b1b17a71d" name="Snake Move Direcrion" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="00f1c581-4232-4c68-a548-9aebb31313bc" />
+        <suppliersInternal>
+          <dependency Id="5678e6d0-67c6-4e0e-9388-c29cb7a75f8b">
+            <useCaseMoniker Id="0f2b4805-9bd0-4581-b27b-4325141e52c5" LastKnownName="Snake Moving" />
+            <elementDefinition Id="b1307ded-39f2-4744-b7a8-f142262a23d2" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0f2b4805-9bd0-4581-b27b-4325141e52c5" name="Snake Moving" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65a83373-5094-451d-b0a0-f3df170d28b6" />
+        <generalsInternal>
+          <generalization Id="56a4ea82-3ffb-4829-a455-c7e70b1f3e7e" isSubstitutable="false">
+            <useCaseMoniker Id="8ab58a20-95c0-4cd9-a5c5-79b6ada39b7f" LastKnownName="Correcting Out Position" />
+            <elementDefinition Id="823dbd7a-746b-49e0-9d10-595e1d8eacc6" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cad8f06f-91a5-4e4f-ba05-96b95ef3fb9c" name="Timer Tik" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="696cd246-c603-47b7-8bc1-0225cffa52e3" />
+        <generalsInternal>
+          <generalization Id="e862f349-7ed5-41fb-b1cb-7ddcd8974520" isSubstitutable="false">
+            <useCaseMoniker Id="0f2b4805-9bd0-4581-b27b-4325141e52c5" LastKnownName="Snake Moving" />
+            <elementDefinition Id="f9e3e429-155d-4280-b62a-379f7269c1be" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="80ed7674-c391-4e6e-b005-c08d53a9439d" name="Checking Collisions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d3cef20-733a-41e3-98b9-cdc5aea246a3" />
+        <extendedCases>
+          <extend Id="0d1250a1-5b51-412b-933a-30e84c44f292">
+            <useCaseMoniker Id="0af96878-c3bc-4106-86c1-c32325db49a5" LastKnownName="Exit" />
+            <elementDefinition Id="ae0ee5da-4006-4d8a-823d-fb3b07adc07c" />
+          </extend>
+          <extend Id="d86af1ff-4183-4abb-adcc-a8c96a527e21">
+            <useCaseMoniker Id="4ea58803-5264-4528-929f-80ed46bc0ed8" LastKnownName="Increasing Snake Size" />
+            <elementDefinition Id="4c603925-0f14-42ef-b658-de94d12748c7" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8ab58a20-95c0-4cd9-a5c5-79b6ada39b7f" name="Correcting Out Position" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1085b4a2-3adb-4beb-9263-2f0f8760548c" />
+        <generalsInternal>
+          <generalization Id="69e536ad-d413-40fe-b8b3-8b1fdf82404d" isSubstitutable="false">
+            <useCaseMoniker Id="80ed7674-c391-4e6e-b005-c08d53a9439d" LastKnownName="Checking Collisions" />
+            <elementDefinition Id="8af208d7-a7d8-46ce-87f3-21e8323979fa" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4ea58803-5264-4528-929f-80ed46bc0ed8" name="Increasing Snake Size" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47443c03-030e-4c4c-aba5-f13905f4f141" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0af96878-c3bc-4106-86c1-c32325db49a5" name="Exit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2077af3e-35d1-401f-a127-27b862a34b66" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="eaaa921d-e28c-44c2-9a99-e12b3fe4bba3" name="ModelingProject1">
+    <elementDefinition Id="667bc62d-f709-453d-abe6-c89ebcfe413f" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fe726ed0-dbac-4e4b-a075-fc0482342963">
+        <profileInstance Id="6509971b-3828-4d51-97f4-bd0de724e492" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="29824565-495e-41eb-813c-e0cda33fac3c">
+        <profileInstance Id="cf146060-0d07-468e-88b8-a7a78bd6109c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ba1f7585-773b-4e68-934d-81a6cb26b4d7">
+        <profileInstance Id="26656a11-285e-4e37-a3a3-d95d4ae851d1" name="CSharpProfile">
+          <elementDefinition Id="04416398-e4a4-4bb4-b1ac-1cd3cd17bcc7" />
+        </profileInstance>
+        <elementDefinition Id="d4ddc04a-6713-4825-9a6f-6f218870c7a5" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
