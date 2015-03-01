@@ -14,6 +14,7 @@ namespace TSPP
             Position = Pos;
             IsHelpful = true;
         }
+
         public override void DrawItem(Pen MyPen, Graphics gPanel, int SizeofCell)
         {
             gPanel.FillRectangle(MyPen.Brush, Position.X * SizeofCell, Position.Y * SizeofCell, SizeofCell, SizeofCell);

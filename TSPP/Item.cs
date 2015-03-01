@@ -10,6 +10,7 @@ namespace TSPP
     public class Item
     {
         private Point varPosition;
+        public bool IsHelpful;
         public Point Position
         {
             get
@@ -21,12 +22,14 @@ namespace TSPP
                 varPosition = value;
             }
         }
-        public bool IsHelpful;
+
         public Item()
         { }
+
         public Item(Point Pos)
         {
         }
+
         public virtual void DrawItem(Pen MyPen, Graphics gPanel, int SizeofCell)
         {
         }

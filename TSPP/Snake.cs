@@ -10,12 +10,14 @@ namespace TSPP
 {
     public class Snake
     {
+        private static Snake _singleton;
+        public List<Point> Position { get; set; }
+        public ArrowDirection Direction { get; set; }
+
         private Snake()
         {
             // Prevent outside instantiation
         }
-
-        private static Snake _singleton;
 
         public static Snake GetSingleton()
         {
@@ -30,8 +32,6 @@ namespace TSPP
             return _singleton;
         }
 
-        public List<Point> Position { get; set; }
-        public ArrowDirection Direction { get; set; }
         public void DrawSnake(Graphics gPanel, Pen MyPen, int SizeofCell)
         {
             foreach (Point p in Position)
