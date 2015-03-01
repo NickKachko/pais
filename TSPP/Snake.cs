@@ -44,7 +44,7 @@ namespace TSPP
         {
             for (int i = Position.Count - 1; i > 0; i--)
             {
-                Position[i] = Position[i - 1];
+                Position[i] = Position[i - 1]; 
             }
             Point temp = Position[0];
             if (Direction == ArrowDirection.Down) { temp.Y++; if (temp.Y >= NetRes.Y) temp.Y = 0; }
