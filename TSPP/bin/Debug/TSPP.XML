@@ -244,6 +244,11 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:TSPP.NamespaceDoc">
+            <summary>
+            This is a main namespace to develop a projects in
+            </summary>
+        </member>
         <member name="T:TSPP.Net">
             <summary>
             The class for the net attributes and functions

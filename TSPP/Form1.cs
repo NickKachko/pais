@@ -186,4 +186,12 @@ namespace TSPP
             Temp.Show();
         }
     }
+
+    /// <summary>
+    /// This is a main namespace to develop a projects in
+    /// </summary>
+    [System.Runtime.CompilerServices.CompilerGenerated]
+    class NamespaceDoc
+    {
+    }
 }
